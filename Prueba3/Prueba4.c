@@ -171,17 +171,6 @@ struct list_node* Amigos_Sugeridos(int graph[5][5],int size, struct tree_node *t
         struct list_node* lista_amigos=(struct list_node*)malloc(sizeof(list_node)); //Creo la lista de amigos sugeridos
         struct tree_node* temp=buscar_nodo_tree(tree,name);
         struct tree_node* temp1=(struct tree_node*)malloc(sizeof(tree_node));
-        if(temp!=tree)
-        {
-            if(temp ==tree->left)
-            {
-                temp1=tree;
-            }
-            else if(temp==tree->right)
-            {
-                temp1=tree;
-            }
-        }
         if (temp->left !=NULL)
         {
             if(temp!=tree)
